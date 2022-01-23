@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --purple: #6C63FF;
+    --purple-light: #D7D4FF;
+    --white: #FFF;
+    --white-200: #F9F9F9;
+    --black: #2B2B2B;
+    --gray: #555;
+    --gray-dark: #2A2A2A;
+    --red: #FF6363;
+    --blue-light: #63ECFF;
+    --pink: #F363FF;
+    --green: #63FF73;
+    --yellow: #FFDD63;
+}
+
+body {
+    background: var(--white-200);
+}
+
+/* -- HEADER -- */
+header {
+    background: var(--purple-light);
+    height: 80vh;
+}
+
+.header-container {
+    max-width: 1240px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.header-text {
+    width: 390px;
+    padding-top: 135px;
+}
+
+.header-text h1 {
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 47px;
+    color: var(--black);
+}
+
+.header-text p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 32px;
+    color: var(--gray);
+    margin-top: 18px;
+}
+
+.header-text button {
+    width: 155px;
+    height: 50px;
+    background: var(--purple);
+    box-shadow: 0px 5px 5px rgba(23, 23, 23, 0.1);
+    border-radius: 5px;
+    border: none;
+    color: var(--white);
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .4s ease;
+    margin-top: 45px;
+}
+
+.header-text button:hover {
+    opacity: 0.9;
+}
+
+.header-image {
+    margin-top: 87px;
+}
+
+.header-image img{
+    width: 100%;
+}
+
+
+/* -- MAIN -- */
+.main-container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.main-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 340px);
+    justify-content: space-between;
+    margin-top: 150px;
+}
+
+.card {
+    width: 340px;
+    height: 423px;
+    background: var(--white);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 68px;
+}
+
+.card-color {
+    height: 50%;
+}
+
+.color-red {
+    background: var(--red);
+}
+
+.color-blue-light {
+    background: var(--blue-light);
+}
+
+.color-pink {
+    background: var(--pink);
+}
+
+.color-green {
+    background: var(--green);
+}
+
+.color-yellow {
+    background: var(--yellow);
+}
+
+.color-purple {
+    background: var(--purple);
+}
+
+.card-text {
+    padding: 24px 30px 30px 30px;
+}
+
+.card-text h3 {
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--black);
+}
+
+.card-text p {
+    margin-top: 26px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--gray);
+}
+
+
+/* -- FOOTER -- */
+footer {
+    background: var(--purple-light);
+    margin-top: 120px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 85px;
+}
+
+.footer-content h2 {
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    color: var(--black);
+}
+
+.footer-form {
+    margin-top: 50px;
+    width: 470px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 80px;
+}
+
+form input {
+    height: 68px;
+    border-radius: 6px;
+    border: none;
+    padding-left: 15px;
+}
+
+form input:active,
+form input:focus,
+form textarea:active,
+form textarea:focus {
+    outline-color: var(--purple);
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--gray);
+    font-family: 'Lato', sans-serif;
+}
+
+form textarea {
+    height: 165px;
+    padding-left: 15px;
+    padding-top: 21px;
+    border-radius: 6px;
+    border: none;
+    resize: none;
+}
+
+form button {
+    background: var(--purple);
+    box-shadow: 0px 5px 5px rgba(23, 23, 23, 0.1);
+    border-radius: 6px;
+    border: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--white);
+    padding: 15px 0px;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+form button:hover {
+    opacity: 0.9;
+}

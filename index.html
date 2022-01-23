@@ -5,11 +5,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/styles.css">
-    
+    <script src="assets/js/svg-inject.min.js"></script>
+
     <title>One Page</title>
 </head>
+
 <body>
+    <header>
+        <div class="header-container">
+            <div class="header-text">
+                <h1>Lorem ipsum dolor sit amet</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu massa sit amet augue consectetur ullamcorper non ac massa.</p>
+                <button type="button">Botão</button>
+            </div>
+            
+            <div class="header-image">
+                <img src="assets/images/gift.svg" alt="Gift image" onload="SVGInject(this)">
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <div class="main-container">
+            <div class="main-cards">
+                <div class="card">
+                    <div class="card-color color-red"></div>
+                    <div class="card-text">
+                        <h3>Título do card</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.</p>
+                    </div>
+                </div>
     
+                <div class="card">
+                    <div class="card-color color-blue-light"></div>
+                    <div class="card-text">
+                        <h3>Título do card</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.</p>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="card-color color-pink"></div>
+                    <div class="card-text">
+                        <h3>Título do card</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.</p>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="card-color color-green"></div>
+                    <div class="card-text">
+                        <h3>Título do card</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.</p>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="card-color color-yellow"></div>
+                    <div class="card-text">
+                        <h3>Título do card</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.</p>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="card-color color-purple"></div>
+                    <div class="card-text">
+                        <h3>Título do card</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-title">
+                <h2>Entre em contato</h2>
+            </div>
+            
+            <div class="footer-form">
+                <form>
+                    <input type="text" name="nome" placeholder="Nome">
+                    <input type="email" name="email" placeholder="E-mail">
+                    <input type="text" name="telefone" placeholder="Telefone">
+                    <textarea name="mensagem" placeholder="Mensagem..."></textarea>
+                    <button type="submit">Enviar mensagem</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
 
 
     <script src="assets/js/script.js"></script>
