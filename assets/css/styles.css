@@ -25,10 +25,29 @@ body {
     background: var(--white-200);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+  
+html::-webkit-scrollbar{
+    width: 10px;
+}
+  
+html::-webkit-scrollbar-track {
+    background-color: #0e091b;
+}
+  
+html::-webkit-scrollbar-thumb {
+    background-color: var(--purple);
+    border-radius: 6px;
+}
+
+  
 /* -- HEADER -- */
 header {
     background: var(--purple-light);
-    height: 80vh;
+    height: 100%;
+    padding-bottom: 120px;
 }
 
 .header-container {
@@ -64,6 +83,7 @@ header {
 .header-text button {
     width: 155px;
     height: 50px;
+    margin-top: 45px;
     background: var(--purple);
     box-shadow: 0px 5px 5px rgba(23, 23, 23, 0.1);
     border-radius: 5px;
@@ -75,7 +95,6 @@ header {
     font-weight: 700;
     cursor: pointer;
     transition: all .4s ease;
-    margin-top: 45px;
 }
 
 .header-text button:hover {
@@ -86,7 +105,7 @@ header {
     margin-top: 87px;
 }
 
-.header-image img{
+.header-image svg{
     width: 100%;
 }
 
@@ -169,10 +188,16 @@ footer {
     margin-top: 120px;
 }
 
-.footer-content {
+.footer-container {
+    max-width: 1240px;
+    margin: 0 auto;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+}
+
+.footer-content {
+    text-align: center;
+    width: 470px;
     padding-top: 85px;
 }
 
@@ -185,11 +210,12 @@ footer {
 }
 
 .footer-form {
-    margin-top: 50px;
-    width: 470px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
 }
 
-form {
+.footer-form form {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -247,4 +273,89 @@ form button {
 
 form button:hover {
     opacity: 0.9;
+}
+
+
+/* -- MEDIA QUERIES -- */
+@media (max-width: 1400px) {
+    .header-text,
+    .header-image {
+        padding-right: 20px;
+    }
+
+    .header-text {
+        padding-left: 20px;   
+    }
+}
+
+@media (max-width: 1200px) {
+    .header-image svg{
+        width: 500px;
+        height: 360px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .main-cards {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 779px) {
+    header {
+        padding-bottom: 85px;
+    }
+    
+    .header-container {
+        flex-direction: column;
+        justify-content: flex-start; 
+        align-items: center;
+    }
+
+    .header-text {
+        width: 100%;
+        padding-top: 55px;
+    }
+
+    .header-text h1{
+        font-size: 32px;
+    }
+
+    .header-text p {
+        font-size: 18px;
+    }
+
+    .header-image svg{
+        width: 400px;
+        height: 288px;
+    }
+
+    .footer-title,
+    .footer-form {
+        padding: 0px 10px;
+    }
+
+    .footer-form form {
+        gap: 20px;
+    }
+
+    form button {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 430px) {
+    .header-image svg{
+        width: 280px;
+        height: 202px;
+    }
+
+    .main-cards {
+        grid-template-columns: repeat(auto-fill, 300px);
+        justify-content: center;
+    }
+
+    .card {
+        width: 100%;
+    }
 }
