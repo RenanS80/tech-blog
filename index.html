@@ -7,96 +7,110 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="assets/js/svg-inject.min.js"></script>
 
-    <title>One Page</title>
+    <title>TechBlog</title>
 </head>
 
 <body>
-    <header>
-        <div class="header-container">
-            <div class="header-text">
-                <h1>Lorem ipsum dolor sit amet</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu massa sit amet augue consectetur ullamcorper non ac massa.</p>
-                <button type="button">Botão</button>
+    <section class="hero">
+        <div class="container">
+            <div class="hero__text">
+                <h1>Encontre os <span>melhores artigos</span> de programação em um só lugar</h1>
+                <p>Explore o topo da programação em um só lugar! <br>
+                Seu destino único para dicas e tendências atuais.</p>
+                <button>Buscar artigos</button>
             </div>
             
-            <div class="header-image">
-                <img src="assets/images/gift.svg" alt="Gift image" onload="SVGInject(this)">
+            <div class="hero__image">
+                <img src="assets/images/hero-image.png" alt="Ilustração">
             </div>
         </div>
-    </header>
+    </section>
+
 
     <!-- MAIN -->
     <main>
-        <div class="main-container">
+        <div class="container">
+            <h2>Artigos recomendados</h2>
             <div class="main-cards">
                 <div class="card">
-                    <div class="card-color color-red"></div>
-                    <div class="card-text">
-                        <h3>Título do card</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.</p>
+                    <div class="card__image">
+                        <img src="assets/images/card1.png" alt="O que é linguagem de programação? Conheça as principais">
+                    </div>
+                    <div class="card__text">
+                        <h3>O que é linguagem de programação? Conheça as principais</h3>
+                        <p>Uma das mais populares vertentes da tecnologia da informação, a área de...</p>
                     </div>
                 </div>
     
                 <div class="card">
-                    <div class="card-color color-blue-light"></div>
-                    <div class="card-text">
-                        <h3>Título do card</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.</p>
+                    <div class="card__image">
+                        <img src="assets/images/card2.png" alt="Python: por que a linguagem é tão usada para Data Science e finanças?">
+                    </div>
+                    <div class="card__text">
+                        <h3>Python: por que a linguagem é tão usada para Data Science e finanças?</h3>
+                        <p>O mundo da programação conta com algumas opções de linguagem para...</p>
                     </div>
                 </div>
     
                 <div class="card">
-                    <div class="card-color color-pink"></div>
-                    <div class="card-text">
-                        <h3>Título do card</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.</p>
+                    <div class="card__image">
+                        <img src="assets/images/card3.png" alt="GitHub tem receita de US$ 1 bilhão e 90 milhões de usuários">
+                    </div>
+                    <div class="card__text">
+                        <h3>GitHub tem receita de US$ 1 bilhão e 90 milhões de usuários</h3>
+                        <p>O popular serviço de repositório de código GitHub foi adquirido pela...</p>
                     </div>
                 </div>
     
                 <div class="card">
-                    <div class="card-color color-green"></div>
-                    <div class="card-text">
-                        <h3>Título do card</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.</p>
+                    <div class="card__image">
+                        <img src="assets/images/card4.png" alt="15 comandos no GIT que os desenvolvedores precisam saber">
+                    </div>
+                    <div class="card__text">
+                        <h3>15 comandos no GIT que os desenvolvedores precisam saber</h3>
+                        <p>Dominar os comandos GIT é uma habilidade que se conquista com...</p>
                     </div>
                 </div>
     
                 <div class="card">
-                    <div class="card-color color-yellow"></div>
-                    <div class="card-text">
-                        <h3>Título do card</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.</p>
+                    <div class="card__image">
+                        <img src="assets/images/card5.png" alt="GIT e GitHub: o que são e quais as diferenças entre eles?">
+                    </div>
+                    <div class="card__text">
+                        <h3>GIT e GitHub: o que são e quais as diferenças entre eles?</h3>
+                        <p>Git e GibHub são dois softwares de controle de versão essenciais para...</p>
                     </div>
                 </div>
     
                 <div class="card">
-                    <div class="card-color color-purple"></div>
-                    <div class="card-text">
-                        <h3>Título do card</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.</p>
+                    <div class="card__image">
+                        <img src="assets/images/card6.png" alt="GitHub Copilot ganha integração com GPT-4 e interface conversacional">
+                    </div>
+                    <div class="card__text">
+                        <h3>GitHub Copilot ganha integração com GPT-4 e interface conversacional</h3>
+                        <p>O GitHub Copilot, ferramenta de desenvolvimento baseada em IA...</p>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
+
     <!-- FOOTER -->
     <footer>
-        <div class="footer-container">
-            <div class="footer-content">
-                <div class="footer-title">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__title">
                     <h2>Entre em contato</h2>
                 </div>
 
-                <div class="footer-form">
+                <div class="footer__form">
                     <form>
                         <input type="text" name="nome" placeholder="Nome" required>
                         <input type="email" name="email" placeholder="E-mail" required>
-                        <input type="text" class="telefone" name="telefone" placeholder="Telefone">
-                        <textarea name="mensagem" placeholder="Mensagem..."></textarea>
-                        <button type="submit">Enviar mensagem</button>
+                        <textarea name="mensagem" placeholder="Assunto da mensagem"></textarea>
+                        <button type="submit">Entrar em contato</button>
                     </form>
                 </div>
             </div>
@@ -104,8 +118,7 @@
     </footer>
 
 
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/jquery.mask.js"></script>
+    <!-- JAVASCRIPT -->
     <script src="assets/js/script.js"></script>
 
 </body>
